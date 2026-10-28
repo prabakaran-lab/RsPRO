@@ -20,3 +20,13 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# --- Datasheet Studio (this project) ---
+node_modules/
+.next/
+dist/
+*.log
+*.tsbuildinfo
+.ocr-cache/
+.env
+.env.*
+tmp/

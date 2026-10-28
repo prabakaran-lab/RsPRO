@@ -1,0 +1,910 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>RS PRO RFID Coded Non-Contact Safety Switch, Rectangular Body</title>
+        <style>
+            @page {
+                size: a4;
+                margin-top: 2.2cm;
+                margin-bottom: 2.0cm;
+                margin-left: 1.0cm;
+                margin-right: 1.0cm;
+            }
+            
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                color: #111111;
+                font-size: 13px;
+                line-height: 1.4;
+                background-color: #ffffff;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-family: Arial, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                margin: 0;
+            }
+
+            td, th, tr, li, p, a, div {
+                font-family: Arial, sans-serif;
+            }
+
+            li, ol, a, p {
+                font-size: 16px;
+            }
+
+            #content-to-print {
+                width: 100%;
+                margin: 0 auto;
+                background: white;
+                position: relative;
+            }
+
+            /* Master grid */
+            .page {
+                page-break-after: always;
+                page-break-inside: avoid;
+                box-sizing: border-box;
+            }
+            
+            /* Page 1 - Two columns layout matching exact RS PRO specification */
+            .p1-sidebar h4 {
+                background-color: #ffffff;
+                color: #E40613;
+                padding: 10px 0;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 500;
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+            .p1-sidebar ul {
+                padding-left: 20px;
+                margin: 0;
+                margin-top: 15px;
+            }
+            .p1-sidebar li {
+                color: #ffffff;
+                margin-bottom: 5px;
+                font-size: 13px; /* Smaller font to fit multiple items */
+                line-height: 1.4;
+            }
+
+            /* Page 2+ - Dynamic Flow Sections */
+            .page-section {
+                margin-top: 20px;
+                page-break-inside: avoid;
+            }
+            .inner-section {
+                margin-top: 5px;
+            }
+            .innersection2 {
+                margin-top: 5px;
+            }
+            .secondary-heading {
+                width: fit-content;
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                font-weight: 500;
+                page-break-after: avoid;
+                page-break-before: avoid;
+                page-break-inside: avoid;
+            }
+            .sec-head-table {
+                page-break-after: avoid;
+                page-break-before: avoid;
+                page-break-inside: avoid;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+            }
+            .sec-head-table span {
+                background-color: #E40613;
+                padding: 6px 25px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                font-size: 18px;
+                color: white;
+                page-break-inside: avoid;
+                display: inline-block;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+            .table-heading-combiner {
+                page-break-inside: avoid;
+                page-break-before: avoid;
+                page-break-after: avoid;
+                margin-top: 20px;
+                overflow: hidden;
+            }
+            .page-section hr {
+                margin: 0;
+                border: none;
+                height: 3px;
+                background-color: #E40613;
+                margin-top: -1px; /* Overlap slightly to ensure zero gap */
+                opacity: 1;
+            }
+            .content-box {
+                padding: 12px 15px;
+                border: solid 1px #F9D4B9;
+                background-color: #ffffff;
+                line-height: 1.4;
+            }
+            .description-content {
+                font-size: 16px;
+            }
+            .description-content p {
+                margin: 5px 0;
+                font-size: 16px;
+            }
+            .description-content ul, .description-content ol {
+                margin: 8px 0;
+                padding-left: 25px;
+            }
+            .description-content li {
+                font-size: 16px;
+                margin-bottom: 4px;
+            }
+            
+            /* Table layout geometry matching exact reference specifications */
+            .module-specification-table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+                margin-top: 5px;
+            }
+            .module-specification-table th, .module-specification-table td {
+                border: 1px solid #F9D4B9;
+                padding: 6px 10px;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .module-specification-table th {
+                background-color: #fbe4d5;
+                font-weight: bold;
+            }
+            .module-specification-table tr {
+                page-break-inside: avoid;
+            }
+            .table-data-with-header th, .table-data-with-header td {
+                text-align: left;
+            }
+
+            .diagram-container {
+                text-align: center;
+                margin-top: 15px;
+                page-break-inside: avoid;
+            }
+            .diagram-container table {
+                width: 100%;
+                border: none;
+            }
+            .diagram-container td {
+                border: none !important;
+                text-align: center;
+            }
+            .diagram-label {
+                font-size: 12px;
+                font-weight: bold;
+                color: #555555;
+                margin-bottom: 5px;
+            }
+            .diagram-container img {
+                max-height: 300px;
+                max-width: 450px;
+                object-fit: contain;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content-to-print">
+            
+            <!-- PAGE 1: Features sidebar & main product cover details -->
+            <div class="page" style="page-break-after:always;">
+                <table style="width:100%; height:25.0cm; border-collapse:collapse; table-layout:fixed; margin:0; padding:0;">
+                    <tr>
+                        <td style="width:35%; vertical-align:top; border:none !important; padding:0; height:25.0cm;">
+                            <div style="background-color:#E40613; padding-top:30px; border-radius:24px 24px 0 0; height:100%; min-height:25.0cm; box-sizing:border-box;" class="p1-sidebar">
+                                <h4>FEATURES</h4>
+                                <ul style="padding:0 20px 3px 20px; margin-top: 15px;">
+                                    <li><b> RFID Coded Actuator:</b> Offers high security and tamper resistance for machine safety applications</li><li><b>Rectangular Body Style:</b> Compact design for easy integration into various systems</li><li><b>Built-in Safety Relay:</b> Enhances safety by providing reliable switching</li><li><b>Pre-Wired Connection:</b> Simplifies installation and reduces setup time</li><li><b>IP67 and IP69K Rated:</b> Ensures durability and protection against dust and water ingress</li><li><b>ABS and Resin Housing:</b> Provides robust protection in harsh environments</li><li><b>Safety Category 4:</b> Meets high safety standards for critical applications</li><li><b>2 NO and 1 NC Safety Contacts:</b> Offers versatile switching options for different safety requirements</li><li><b>Switching Distance of 8 to 20 mm:</b> Allows flexibility in installation and operation</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td style="width:65%; vertical-align:top; border:none !important; padding:20px; height:25.0cm;">
+                            <div style="margin-left: 20px; margin-top: 50px;">
+                                <h2 style="font-weight:600; text-align:center; font-size:32px; line-height:1.2; margin-top:20px; font-family:Arial, sans-serif;">RS PRO RFID Coded Non-Contact Safety Switch, Rectangular Body</h2>
+                                <h5 style="font-weight:500; text-align:center; font-size:20px; color:#626562; margin-top:10px; font-family:Arial, sans-serif;">RS Stock No: 656-634</h5>
+                                <div style="text-align: center; margin-top: 30px;">
+                                    
+                                </div>
+                                <div style="margin-top: 80px; font-size: 16px; color: #333; line-height: 1.5; font-family:Arial, sans-serif;">
+                                    RS PRO is the own brand of RS. The RS PRO Seal of Approval is your assurance of professional quality, a guarantee that every part is rigorously tested, inspected, and audited against demanding standards. Making RS PRO the Smart Choice for our customers.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- FLOWING CONTENT PAGES: Sections naturally break across pages preventing clipping -->
+            <div class="dynamic-flow-content">
+                <!-- Dynamically compiled sequential sections from sheet columns -->
+                
+        <div class="page-section" style="margin-top:20px;">
+          <div class="inner-section innersection2">
+            <h4 class="secondary-heading sec-head-table"><span>Product Description</span></h4>
+            <hr>
+            <div class="content-box">
+              <div class="description-content">
+                <p>The RS PRO RFID Coded Non-Contact Safety Switch is designed to enhance safety in industrial environments by ensuring reliable machine guarding. Its non-contact operation with RFID technology provides a high level of security and tamper resistance, making it ideal for safeguarding machinery without physical contact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>General Specifications</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Actuator Included</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Yes</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Actuator Type</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">RFID Coded</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Body Style</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Rectangular</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Built-in Safety Relay</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Yes</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Connection Type</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Pre-Wired</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Housing Colour</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Yellow</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Number of Auxiliary Contacts</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">3</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Product Type</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Non-Contact Safety Switch</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Sensor Principle</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">RFID</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Terminal Type</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Wire</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>Electrical Specifications</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Supply voltage</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">24Vdc (+/- 15%)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Operation</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Individually Coded RFID (Yellow) or Magnetically Coded (Black)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Safety Contact Type</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">PNP type OSSD</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">No. of OSSD Inputs (Max)</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">2</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">No. of OSSD Outputs</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">2</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Safety contact N/O ON and OFF between</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">8mm - 20mm</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Auxiliary contact N/C OFF and on between</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">8mm - 20mm</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Safety Contact Rating</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">DC : 24Vdc / 2A</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Auxiliary Contact Rating</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">DC : 24Vdc / 2A</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">External Contact Fuse</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">1.8Amps Fast Acting (Quick Blow)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Switch Power Consumption (Max)</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">50mA</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Overvoltage Category</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">III</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">OSSD Pulse Width</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">400 μs</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Short Circuit Protection</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Yes</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Over Current Protection</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Yes</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">IP Rating</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">IP67 / IP69K</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Connection</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Pre-Wired or M12 LQD</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Operating Temperature</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">-10°C to +60°C</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Mounting</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Target to target</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Construction</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Black & Yellow ABS Resin Filled</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Indication</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">Dual Colour LED</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>Mechanical Specifications</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Depth</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">20 mm</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Housing Material</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">ABS, Resin</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Length</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">88 mm</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left; font-weight:bold; width:50%;">Width</td>
+                        <td style="vertical-align:middle; text-align:left; width:50%;">25 mm</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+
+        <div class="page-section" style="margin-top:20px;">
+          <div class="inner-section innersection2">
+            <h4 class="secondary-heading sec-head-table"><span>Mounting</span></h4>
+            <hr>
+            <div class="content-box">
+              <div class="description-content">
+                <p>Do not use safety switches as a stop.</p>
+<p>Mount the switch on to the machine frame and the actuator on to the opening edge of the door.</p>
+<p><strong>Always try to mount the switch on non-ferrous material. (Ferrous materials may reduce the switching distance.)</strong></p>
+<p><strong>NOTES:</strong></p>
+<ul>
+<li>Minimum separation 50mm between adjacent switches</li>
+<li><strong>DO NOT mount on hinged side of the guard.</strong></li>
+<li>Leave a minimum gap of 2mm between the switch and actuator.</li>
+</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="page-section" style="margin-top:20px;">
+          <div class="inner-section innersection2">
+            <h4 class="secondary-heading sec-head-table"><span>Operating Faces</span></h4>
+            <hr>
+            <div class="content-box">
+              <div class="description-content">
+                <p>Designed to operate on ALL guard positions. The RPONK and RPOSG are extremely versatile.</p>
+<p>The RPONK and RPOSG will operate on two faces.</p>
+<p>Whereas the RPOH1 will only operate on the front face.</p>
+<p>All O-Series switches have a +/- 4mm misalignment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="page-section" style="margin-top:20px;">
+          <div class="inner-section innersection2">
+            <h4 class="secondary-heading sec-head-table"><span>Misalignment Indication</span></h4>
+            <hr>
+            <div class="content-box">
+              <div class="description-content">
+                <p>The RPOH1 has a feature that will show the user if the switch is not aligned correctly. All O-Series switches have a +/- 4mm misalignment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="page-section" style="margin-top:20px;">
+          <div class="inner-section innersection2">
+            <h4 class="secondary-heading sec-head-table"><span>Teach Mode (RPONK / RPOSG Only)</span></h4>
+            <hr>
+            <div class="content-box">
+              <div class="description-content">
+                <p>If during installation you lose or break the accompanying actuator, it is possible to re-teach a new part by following these steps:</p>
+<ol>
+<li><strong>Step 1</strong> — Power/OSSD LED Flashing yellow indicates a incorrect coded actuator has been detected.</li>
+<li><strong>Step 2</strong> — Drop the supply to 0v then bring back up to 17v. Input/Reset LED will begin to flash purple meaning it is ready to accept a new code.</li>
+<li><strong>Step 3</strong> — Bring the new actuator within operating distance of the switch. Input/Reset LED will stop flashing and turn solid purple. This means the new code has been accepted.</li>
+<li><strong>Step 4</strong> — Increase the supply to 24Vdc. Input/Reset LED will switch OFF or turn blue (If connected in monitored reset.) and Power/OSSD LED will change to green.</li>
+</ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>RPONK / RPOSG LED Configuration</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <thead>
+                    
+        <tr>
+          <th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Power/OSSD LED</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Input/Reset LED</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Description</th>
+        </tr>
+      
+                  </thead>
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">No Power supplied to switch</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Red solid</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Power Supplied to switch, no actuator present</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Red flashing</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Output fault (turn power off and on to reset)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Red flashing</td><td style="vertical-align:middle; text-align:left;">Yellow flash</td><td style="vertical-align:middle; text-align:left;">OSSD input fault (turn power off and on to reset)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Green solid</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">OSSD outputs are present and operating correctly</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Green flash</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Actuator present, OSSD inputs not detected</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Green flash</td><td style="vertical-align:middle; text-align:left;">Blue solid</td><td style="vertical-align:middle; text-align:left;">Actuator present, OSSD inputs present, external circuit needs resetting (EDM only)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Yellow solid</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">No input, wrong actuator</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Purple solid</td><td style="vertical-align:middle; text-align:left;">Actuator has been taught</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Purple flash</td><td style="vertical-align:middle; text-align:left;">No actuator present, voltage is at 17v ready to be taught</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>RPOH1 LED Configuration</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <thead>
+                    
+        <tr>
+          <th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Power/OSSD LED</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Input/Reset LED</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Description</th>
+        </tr>
+      
+                  </thead>
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">No Power supplied to switch</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Red solid</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Power Supplied to switch, no actuator present</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Red flashing</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Output fault (turn power off and on to reset)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Red flashing</td><td style="vertical-align:middle; text-align:left;">Yellow flash</td><td style="vertical-align:middle; text-align:left;">OSSD input fault (turn power off and on to reset)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Green solid</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">OSSD outputs are present and operating correctly</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Green flash</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Actuator present, OSSD inputs not detected</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Green flash</td><td style="vertical-align:middle; text-align:left;">Blue solid</td><td style="vertical-align:middle; text-align:left;">Actuator present, OSSD inputs present, external circuit needs resetting (EDM only)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Yellow solid</td><td style="vertical-align:middle; text-align:left;">(off)</td><td style="vertical-align:middle; text-align:left;">Actuator Misalinged to switch</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+
+        <div class="page-section" style="margin-top:20px;">
+          <div class="inner-section innersection2">
+            <h4 class="secondary-heading sec-head-table"><span>LED Indication Notes</span></h4>
+            <hr>
+            <div class="content-box">
+              <div class="description-content">
+                <p>Solid Yellow (Input/Reset LED) Check previous connected safety switch is closed (operating) or check if inputs are connected correctly.</p>
+<p>Flashing Yellow (Input/Reset LED) OSSD Input faults are due to different signals, one channel going high and the other low.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>Standard Connection Type (M12, 8 pins, Male)</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <thead>
+                    
+        <tr>
+          <th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">PIN</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Function</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Wire Colour</th>
+        </tr>
+      
+                  </thead>
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">1</td><td style="vertical-align:middle; text-align:left;">Auxiliary</td><td style="vertical-align:middle; text-align:left;">White</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">2</td><td style="vertical-align:middle; text-align:left;">+24VDC</td><td style="vertical-align:middle; text-align:left;">Brown</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">3</td><td style="vertical-align:middle; text-align:left;">NOT USED</td><td style="vertical-align:middle; text-align:left;">Green</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">4</td><td style="vertical-align:middle; text-align:left;">OSSD 2 Input</td><td style="vertical-align:middle; text-align:left;">Yellow</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">5</td><td style="vertical-align:middle; text-align:left;">OSSD 1 Output</td><td style="vertical-align:middle; text-align:left;">Grey</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">6</td><td style="vertical-align:middle; text-align:left;">OSSD 2 Output</td><td style="vertical-align:middle; text-align:left;">Pink</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">7</td><td style="vertical-align:middle; text-align:left;">0V</td><td style="vertical-align:middle; text-align:left;">Blue</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">8</td><td style="vertical-align:middle; text-align:left;">OSSD 1 Input</td><td style="vertical-align:middle; text-align:left;">Red</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>Pre-Wired Connections</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <thead>
+                    
+        <tr>
+          <th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Function</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Standard</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Advanced</th>
+        </tr>
+      
+                  </thead>
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">+24VDC</td><td style="vertical-align:middle; text-align:left;">Brown</td><td style="vertical-align:middle; text-align:left;">Brown</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">0V</td><td style="vertical-align:middle; text-align:left;">Blue</td><td style="vertical-align:middle; text-align:left;">Blue</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">OSSD 1 Output</td><td style="vertical-align:middle; text-align:left;">Grey</td><td style="vertical-align:middle; text-align:left;">Grey</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">OSSD 2 Output</td><td style="vertical-align:middle; text-align:left;">Pink</td><td style="vertical-align:middle; text-align:left;">Pink</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Auxiliary</td><td style="vertical-align:middle; text-align:left;">White</td><td style="vertical-align:middle; text-align:left;">White</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">OSSD 1 Input</td><td style="vertical-align:middle; text-align:left;">Red</td><td style="vertical-align:middle; text-align:left;">Red</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">OSSD 2 Input</td><td style="vertical-align:middle; text-align:left;">Yellow</td><td style="vertical-align:middle; text-align:left;">Yellow</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">A/M Select</td><td style="vertical-align:middle; text-align:left;">Orange (not used)</td><td style="vertical-align:middle; text-align:left;">Orange (see note 1)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">Reset / EDM</td><td style="vertical-align:middle; text-align:left;">Green (not used)</td><td style="vertical-align:middle; text-align:left;">Green (see note 1)</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+
+        <div class="page-section" style="margin-top:20px;">
+          <div class="inner-section innersection2">
+            <h4 class="secondary-heading sec-head-table"><span>Maintenance and Notes</span></h4>
+            <hr>
+            <div class="content-box">
+              <div class="description-content">
+                <h3>Maintenance</h3>
+<p>It is recommended to check the safe operation of the switches and look for signs of damage or excessive wear on a weekly basis. Damaged units should be replaced or returned to the manufacturer for repair where practical.</p>
+<h3>Notes</h3>
+<ul>
+<li>In the interest of product development specifications are subject to change without notice.</li>
+<li>It is the responsibility of the user to ensure compliance with any acts or by-laws in place.</li>
+<li>All information regarding equipment is believed to be accurate at the time of printing. Responsibility cannot be accepted for errors or omissions.</li>
+<li>All dimensions are approximate.</li>
+</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+                <div class="page-section">
+                  <div class="inner-section innersection2">
+                    <div class="table-heading-combiner" style="margin-top:20px;">
+                      <h4 class="secondary-heading sec-head-table"><span>Similar Products</span></h4>
+                      <hr>
+                      
+                      
+                <table class="table-data-with-header module-specification-table" style="margin-top:0;">
+                  <thead>
+                    
+        <tr>
+          <th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Stock No.</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Brand</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Product Name</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Attribute 1</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Attribute 2</th><th style="text-align:center; vertical-align:middle; background-color:#fbe4d5; color:#000000; font-weight:bold; font-size:12px;">Attribute 3</th>
+        </tr>
+      
+                  </thead>
+                  <tbody>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.000</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOH1-21-DC-06M</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.001</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOH1-21-DC-EDM-06M</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.002</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOH1-21-5-LQD</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.003</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOH1-21-8-LQD</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.004</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOSG-21-DC-06M</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.005</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOSG-21-DC-03M</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.006</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOSG-21-DC-10M</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.007</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOSG-21-5-LQD</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.008</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPOSG-21-8-LQD</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.009</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPONK-21-DC-06M</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.010</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPONK-21-DC-EDM-06M</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.011</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPONK-21-5-LQD</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                      <tr>
+                        <td style="vertical-align:middle; text-align:left;">404.012</td><td style="vertical-align:middle; text-align:left;">RS PRO</td><td style="vertical-align:middle; text-align:left;">RPONK-21-8-LQD</td><td style="vertical-align:middle; text-align:left;">24V dc</td><td style="vertical-align:middle; text-align:left;">2NO+1NC</td><td style="vertical-align:middle; text-align:left;">Plastic</td>
+                      </tr>
+                    
+                  </tbody>
+                </table>
+              
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+        </div>
+    </body>
+    </html>
+    

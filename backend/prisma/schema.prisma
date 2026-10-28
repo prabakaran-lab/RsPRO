@@ -1,0 +1,46 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model ImageAsset {
+  id        String   @id @default(uuid())
+  filename  String
+  path      String   @unique // e.g. /images/0656634_1.jpg
+  mimeType  String
+  sizeBytes Int
+  url       String   // Relative URL or S3 URL
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model PdfJob {
+  id           String      @id @default(uuid())
+  status       String      @default("PENDING") // PENDING, PROCESSING, COMPLETED, FAILED
+  progress     Int         @default(0)
+  totalRows    Int         @default(0)
+  successCount Int         @default(0)
+  failedCount  Int         @default(0)
+  excelName    String
+  errorLog     String?
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  details      PdfDetail[]
+}
+
+model PdfDetail {
+  id          String   @id @default(uuid())
+  jobId       String
+  job         PdfJob   @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  stockNo     String
+  productName String
+  filename    String
+  url         String?  // File path or download link
+  status      String   // COMPLETED, FAILED
+  errorLog    String?
+  createdAt   DateTime @default(now())
+}

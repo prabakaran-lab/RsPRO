@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f3f4f6;
+  --color-border-secondary: #e5e7eb;
+  --color-border-tertiary: #d1d5db;
+  
+  --color-background-success: #def7ec;
+  --color-text-success: #03543f;
+  --color-background-info: #e1effe;
+  --color-text-info: #1e429f;
+  --color-background-danger: #fde8e8;
+  --color-text-danger: #9b1c1c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-primary: #f9fafb;
+    --color-text-secondary: #d1d5db;
+    --color-background-primary: #111827;
+    --color-background-secondary: #1f2937;
+    --color-border-secondary: #374151;
+    --color-border-tertiary: #4b5563;
+    
+    --color-background-success: #03543f;
+    --color-text-success: #def7ec;
+    --color-background-info: #1e429f;
+    --color-text-info: #e1effe;
+    --color-background-danger: #9b1c1c;
+    --color-text-danger: #fde8e8;
+  }
+}
+
+body {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flat design utilities - no shadows, no gradients */
+.flat-btn {
+  @apply px-4 py-2 text-sm font-medium transition-colors border-2 cursor-pointer;
+}
+
+.flat-card {
+  @apply p-6 border-2 bg-[var(--color-background-primary)] border-[var(--color-border-secondary)];
+}
+
+.flat-input {
+  @apply px-3 py-2 text-sm bg-transparent border-2 outline-none border-[var(--color-border-secondary)] text-[var(--color-text-primary)] focus:border-primary;
+}
